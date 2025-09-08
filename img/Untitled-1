@@ -1,0 +1,35 @@
+/* Top left Charity Water button image */
+.logo-left {
+  width: 100px;      /* Make the logo larger */
+  height: 100px;     /* Match width for a square image */
+  object-fit: contain; /* Show the whole image inside the box */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10);
+  display: block;
+}
+
+/* Top right 2Water.png logo */
+.logo-right {
+  width: 100px;      /* Make the logo larger */
+  height: 100px;     /* Match width for a square image */
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10);
+  display: block;
+  cursor: pointer;
+}
+
+/* Donate Now button logo in main content */
+.donate-logo-img {
+  width: 100px;      /* Make the logo larger */
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10);
+}
+
+/* Donate Now button text */
+.donate-text {
+  font-size: 1.3em;  /* Make the button text larger */
+  padding: 12px 32px;
+}

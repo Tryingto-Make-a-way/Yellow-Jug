@@ -25,7 +25,7 @@ Fonts:
 
 /* Set up the main font and background color for the whole page */
 body {
-  background-color: #FFC907; /* Soft light blue for a fresh look */
+  background-color: #8BD1CB; /* Soft light blue for a fresh look */
   font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -202,14 +202,84 @@ section {
   background: var(--yellow);
 }
 
-/* Charity Water button image in top left */
+/* Top left Charity Water button image */
 .logo-left {
-  width: 70px;         /* Set the image width */
-  height: 70px;        /* Set the image height */
+  width: 200px;      /* 100% bigger than previous 100px */
+  height: 200px;     /* 100% bigger than previous 100px */
   object-fit: contain; /* Show the whole image inside the box */
-  border-radius: 8px;  /* Slightly rounded corners */
-  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10); /* Soft shadow for depth */
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(46, 157, 247, 0.15); /* Slightly stronger shadow for effect */
   display: block;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Add a fun zoom effect on hover for user experience */
+.logo-left:hover {
+  transform: scale(1.08); /* Slightly enlarge the logo */
+  box-shadow: 0 8px 24px rgba(46, 157, 247, 0.18); /* Deeper shadow on hover */
+}
+
+/* Top right 2Water.png logo */
+.logo-right {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10);
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.logo-right:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 24px rgba(46, 157, 247, 0.18);
+}
+
+/* Donate Now button logo in main content */
+.donate-logo-img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.donate-logo-img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 24px rgba(46, 157, 247, 0.18);
+}
+
+/* Donate Now button text */
+.donate-text {
+  font-size: 1.3em;
+  padding: 12px 32px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.donate-logo-btn:hover .donate-text {
+  background-color: #159A48;
+  transform: scale(1.04);
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 600px) {
+  .logo-left {
+    width: 120px;
+    height: 120px;
+  }
+  .logo-right {
+    width: 70px;
+    height: 70px;
+  }
+  .donate-logo-img {
+    width: 70px;
+  }
+  .donate-text {
+    font-size: 1.1em;
+    padding: 8px 20px;
+  }
 }
 
 /* 
@@ -271,4 +341,39 @@ section {
   .impact-image {
     width: 300px;
   }
+}
+
+/* Donate Now button wrapped in logo image */
+.donate-logo-btn {
+  display: flex;              /* Stack logo and text vertically */
+  flex-direction: column;
+  align-items: center;        /* Center logo and text */
+  text-decoration: none;      /* Remove underline from link */
+  margin-top: 8px;
+}
+
+.donate-logo-img {
+  width: 60px;                /* Set logo size */
+  height: auto;
+  margin-bottom: 6px;         /* Space between logo and text */
+  border-radius: 8px;         /* Slightly rounded corners */
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10); /* Soft shadow */
+}
+
+.donate-text {
+  background-color: #4FCB53;  /* Brand green background */
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 8px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: background 0.2s;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Button hover effect */
+.donate-logo-btn:hover .donate-text {
+  background-color: #159A48; /* Slightly darker green on hover */
 }
