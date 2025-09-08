@@ -25,7 +25,7 @@ Fonts:
 
 /* Set up the main font and background color for the whole page */
 body {
-  background-color: `#FFC907`; /* Soft light blue for a fresh look */
+  background-color: #FFC907; /* Soft light blue for a fresh look */
   font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -202,18 +202,14 @@ section {
   background: var(--yellow);
 }
 
-/* Charity Water Button image in top left */
+/* Charity Water button image in top left */
 .logo-left {
-  width: 60px;              /* Set a good size for the logo */
-  height: auto;
-  border-radius: 8px;       /* Slightly rounded corners */
+  width: 70px;         /* Set the image width */
+  height: 70px;        /* Set the image height */
+  object-fit: contain; /* Show the whole image inside the box */
+  border-radius: 8px;  /* Slightly rounded corners */
   box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10); /* Soft shadow for depth */
-  /* Display the image from img/Charity Water Button.png */
-  /* If you want to use it as a background instead of <img>, you could do: */
-  /* background-image: url('img/Charity Water Button.png'); */
-  /* background-size: contain; */
-  /* background-repeat: no-repeat; */
-  /* background-position: center; */
+  display: block;
 }
 
 /* 
