@@ -7,37 +7,36 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1></h1>
-        <!-- Hero photo (background set in CSS) -->
-        <!-- Sentence under the Hero photo -->
-        <p class="hero-message">Clean water for Everyone</p>
-        <!-- Second sentence under the first -->
-        <p class="hero-submessage">Allowing the next generation to cleanly move forward.</p>
-    </section>
-
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline changed -->
-        <h2>You Can Make a Difference</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Updated impact image to local file -->
-            <img src="img/Woman baby jug.png" alt="Woman holding a baby and a jug" class="impact-image">
-            <!-- Impact story text removed for simplicity -->
-        </div>
-    </section>
-
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <!-- Donate Now button replaced with yellow jug image as a clickable link -->
+    <!-- Top navigation bar with logo and donate link -->
+    <div class="top-bar">
+        <!-- Charity Water button image in top left -->
+        <img src="img/Charity Water button.png" alt="Charity Water Button" class="logo-left">
+        <!-- Donate Water link wraps the water.png image in top right -->
         <a href="https://www.charitywater.org/#donate" target="_blank">
-            <img src="img/yellow Jug.png" alt="Donate Now - Yellow Jug" class="donate-jug">
+            <img src="img/water.png" alt="Donate Water" class="logo-right">
         </a>
+    </div>
+
+    <!-- Hero Section with background image -->
+    <section class="hero-section">
+        <!-- Hero image as a regular image, not a background -->
+        <img src="img/Hero.png" alt="Hero" class="hero-img">
+        <!-- Headline and subheadline under the hero photo -->
+        <p class="hero-message"><strong>Clean Water For Everyone</strong></p>
+        <p class="hero-submessage">Allowing the next generation to move forward cleanly</p>
+    </section>
+
+    <!-- Main content below the hero image -->
+    <section class="main-content">
+        <!-- Headline centered above the jug image -->
+        <h2 class="centered-headline">Make a Difference</h2>
+        <!-- Container with yellow background for jug image and donate button -->
+        <div class="jug-container">
+            <img src="img/Woman baby jug.png" alt="Woman holding a baby and a jug" class="impact-image">
+            <a href="https://www.charitywater.org/#donate" target="_blank" class="donate-jug-btn">
+                Donate Now
+            </a>
+        </div>
     </section>
 </body>
 </html>
