@@ -57,16 +57,22 @@ section {
   margin: 0 auto;            /* Center the image horizontally */
 }
 
+/* Container for hero text under the image */
+.hero-text {
+  margin-top: 20px;
+  text-align: center; /* Center the sentences under the image */
+}
+
 /* Bold headline under hero photo */
 .hero-message {
-  font-size: 1.3em;
+  font-size: 2em;     /* Make the first sentence much larger */
   font-weight: bold;
-  margin: 18px 0 6px 0;
+  margin-bottom: 12px;
 }
 
 /* Subheadline under the bold headline */
 .hero-submessage {
-  font-size: 1em;
+  font-size: 1.5em;   /* Make the second sentence larger */
   color: #444;
   margin-bottom: 10px;
 }
